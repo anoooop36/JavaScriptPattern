@@ -1,12 +1,23 @@
-var catClickedCount = 0
-function incrementCount() {
-    catClickedCount++
+var catClickedCountOne = 0
+var catClickedCountTwo = 0
+function incrementCountOne() {
+    catClickedCountOne++
+}
+
+function incrementCountTwo () {
+    catClickedCountTwo++
 }
 
 
 console.log('loaded')
-document.getElementsByClassName('cat-image')[0].onclick = () => {
+document.getElementsByClassName('cat-image-one')[0].onclick = () => {
     console.log('clicked')
-    incrementCount()
-    document.getElementsByClassName('cat-count')[0].innerHTML = catClickedCount
+    incrementCountOne()
+    document.getElementsByClassName('cat-count-one')[0].innerHTML = catClickedCountOne
+}
+
+document.getElementsByClassName('cat-image-two')[0].onclick = () => {
+    console.log('clicked')
+    incrementCountTwo()
+    document.getElementsByClassName('cat-count-two')[0].innerHTML = catClickedCountTwo
 }
