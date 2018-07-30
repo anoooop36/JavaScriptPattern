@@ -339,10 +339,6 @@ label[for='toggle-all'] {
 	margin-bottom: -1px;
 }
 
-#todo-list li.priortised {
-	background-color: red;
-}
-
 #footer {
 	color: #777;
 	padding: 0 15px;
